@@ -270,7 +270,7 @@ st.plotly_chart(fig, use_container_width=True)
 
 # Изчисление на σr от x на оранжевата точка (ако съществува)
 if ('x_orange' in locals()) and (x_orange is not None):
-    sigma_r = round(x_orange / 10, 3)
+    sigma_r = round(x_orange / 100, 3)
     x_val = round(x_orange, 3)
     st.markdown(f"**Ꚍμ/p = {sigma_r}**")
 else:
