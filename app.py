@@ -252,6 +252,7 @@ fig.update_layout(
         ticks="outside",
         tickvals=np.linspace(xaxis_min, xaxis_max, 11),  # примерно 11 tick-а
         ticktext=[f"{(0.040 * (x - xaxis_min) / (xaxis_max - xaxis_min)):.3f}" for x in np.linspace(xaxis_min, xaxis_max, 11)],  # мащабирани стойности
+        ticklabeloverflow="allow",
         title='Ꚍμ / p',
         fixedrange=True,
         showticklabels=True,
